@@ -35,6 +35,16 @@ class Examples extends Component {
   render() {
     return (
       <React.Fragment>
+        <h1>Explicit Coercion</h1>
+        <hr/>
+        <Code title="Number()" expression='Number("45678")'>
+          This function will turn any object or primitive to a Number
+        </Code>
+        <Code title="String()" expression='String(598346+78)'>
+          This function will turn any object or primitive to a String
+        </Code>
+        <h1>Implicit Coercion</h1>
+        <hr/>
         <Code title="Strings and +" expression="14 + &quot;&quot;">
           Any expression that starts with a String and involves a "+" will result in a
           String
