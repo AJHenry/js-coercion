@@ -65,18 +65,10 @@ class Code extends Component {
 
   render() {
     return (
-      <div>
+      <div className="offset">
         <Row>
-          <Col className="ml-0">
-            <h1>{this.props.title}</h1>
-          </Col>
-          <Col
-            className="d-flex flex-row-reverse"
-            style={{ marginBottom: "1rem" }}
-          >
-            <Button color="primary" onClick={this.toggle}>
-              Try It
-            </Button>
+          <Col className="ml-0" onClick={this.toggle}>
+            <h2>{this.props.title}</h2>
           </Col>
         </Row>
         <Collapse isOpen={this.state.collapse}>
