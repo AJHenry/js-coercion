@@ -18,7 +18,7 @@ class Code extends Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      collapse: false,
+      collapse: false || this.props.collapse,
       expression: this.props.expression || null
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -57,6 +57,10 @@ class Code extends Component {
     }
 
     console.log(answer);
+
+    if(typeof answer === 'undefined'){
+      answer = "";
+    }
 
     this.setState({
       answer: answer.toString()

@@ -54,20 +54,13 @@ class App extends Component {
             <h1 className="display-3 text-center">JavaScript Coercion</h1>
             <p className="lead">
               JavaScript is a weakly typed language, meaning that we can easily
-              change the type of a variable implicitly
+              change the type of a variable
             </p>
             <hr />
             <p className="lead">
-              JavaScript can contains 5 different data types: string, number,
+              JavaScript has 5 different data types: string, number,
               boolean, object, and function... but there are only 3 types of
               coercion: to number, to string, or to boolean.
-            </p>
-            <hr className="my-2" />
-            <p>
-              Coercion can be explicit or implicit. Implicit coercion happens
-              when you apply operators to data types. Explicit coercion happens
-              when you explicitly call Object constructors, like String() or
-              Number(). 
             </p>
           </Jumbotron>
           <Examples />
