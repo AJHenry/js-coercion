@@ -36,19 +36,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">JS Coercion</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="https://github.com/AJHenry/js-coercion">
-                  GitHub
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
         <Container>
           <Jumbotron>
             <h1 className="display-3 text-center">JavaScript Coercion</h1>
