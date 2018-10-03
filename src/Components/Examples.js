@@ -153,7 +153,7 @@ class Examples extends Component {
           <Code title="NaN comparison" expression="let a = NaN;      a != a" collapse>
             NaN is equal to nothing, including itself
           </Code>
-          <Code title="Always check your type" expression="[null] == null" collapse>
+          <Code title="Always check your type" expression='abc" == new String("abc")' collapse>
             You never know what results you might get if you're not careful
           </Code>
           <Code
